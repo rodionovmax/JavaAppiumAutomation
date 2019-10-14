@@ -1,39 +1,39 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import lib.Platform;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-abstract public class ArticlePageObject extends MainPageObject
-{
+abstract public class ArticlePageObject extends MainPageObject {
     protected static String
-        TITLE,
-        FOOTER_ELEMENT,
-        OPTIONS_BUTTON,
-        OPTIONS_ADD_TO_MY_LIST_BUTTON,
-        ADD_TO_MY_LIST_OVERLAY,
-        MY_LIST_NAME_INPUT,
-        MY_LIST_OK_BUTTON,
-        CLOSE_ARTICLE_BUTTON;
+            TITLE,
+            FOOTER_ELEMENT,
+            OPTIONS_BUTTON,
+            OPTIONS_ADD_TO_MY_LIST_BUTTON,
+            ADD_TO_MY_LIST_OVERLAY,
+            MY_LIST_NAME_INPUT,
+            MY_LIST_OK_BUTTON,
+            DESIGNED_BY,
+            JAVA_VIRTUAL_MACHINES,
+            CLOSE_ARTICLE_BUTTON;
 
 
-    public ArticlePageObject(RemoteWebDriver driver)
-    {
+    public ArticlePageObject(RemoteWebDriver driver) {
         super(driver);
     }
 
-    public WebElement waitForTitleElement()
-    {
+    public WebElement waitForTitleElement() {
         return this.waitForElementPresent(TITLE, "Cannot find article title on page", 5);
     }
 
-    public String getArticleTitle()
-    {
+    public String getArticleTitle() {
         WebElement title_element = waitForTitleElement();
-        if(Platform.getInstance().isAndroid()){
+        if (Platform.getInstance().isAndroid()) {
             return title_element.getAttribute("text");
-        } else if (Platform.getInstance().isIOS()){
+        } else if (Platform.getInstance().isIOS()) {
             return title_element.getAttribute("name");
         } else {
             return title_element.getText();
@@ -41,9 +41,8 @@ abstract public class ArticlePageObject extends MainPageObject
 
     }
 
-    public void swipeToFooter()
-    {
-        if(Platform.getInstance().isAndroid()){
+    public void swipeToFooter() {
+        if (Platform.getInstance().isAndroid()) {
             this.swipeUpToFindElement(
                     FOOTER_ELEMENT,
                     "Cannot find the end of the article",
@@ -53,15 +52,51 @@ abstract public class ArticlePageObject extends MainPageObject
                     "Cannot find the end of the article",
                     40);
         } else {
-        this.scrollWebPageTillElementNotVisible(FOOTER_ELEMENT,
-                "Cannot find the end of the article",
-                40);
+            this.scrollWebPageTillElementNotVisible(FOOTER_ELEMENT,
+                    "Cannot find the end of the article",
+                    40);
+        }
     }
+
+    public void scrollWebPageDownByPixels(int pixels) {
+        if (Platform.getInstance().isMW()) {
+            JavascriptExecutor JSExecutor = (JavascriptExecutor) driver;
+            JSExecutor.executeScript("window.scrollBy(0," + pixels + ")");
+        } else {
+            System.out.println("Method scrollWebPageUp() does nothing for platform " + Platform.getInstance().getPlatformVar());
+        }
 
     }
 
-    public void addArticleToMyList(String name_of_folder)
-    {
+    public void findDesignedBy() {
+        this.waitForElementAndClick(
+                DESIGNED_BY,
+                "Cannot find button to open article options",
+                10
+        );
+    }
+
+    public void checkThatElementIsPresent() {
+
+//        waitForElementPresentBy(By.cssSelector("li[title='Java virtual machine']"), "error", 10);
+        waitForElementPresentBy(By.cssSelector("ul>li>a[href='/wiki/Java_virtual_machine']"), "error", 10);
+//        WebElement element = driver.findElement(By.cssSelector("li[title='Java virtual machine']"));
+//        if (element.)
+    }
+
+    public void findJavaVirtualMachines() {
+        this.waitForElementAndClick(
+                JAVA_VIRTUAL_MACHINES,
+                "Cannot find button to open article options",
+                10
+        );
+    }
+
+
+
+
+
+    public void addArticleToMyList(String name_of_folder) {
         this.waitForElementAndClick(
                 OPTIONS_BUTTON,
                 "Cannot find button to open article options",
@@ -102,13 +137,12 @@ abstract public class ArticlePageObject extends MainPageObject
         );
     }
 
-    public void addArticlesToMySaved(){
+    public void addArticlesToMySaved() {
         this.waitForElementAndClick(OPTIONS_ADD_TO_MY_LIST_BUTTON,
                 "Cannot find option to add article to reading list", 10);
     }
 
-    public void closeArticle()
-    {
+    public void closeArticle() {
         this.waitForElementAndClick(
                 CLOSE_ARTICLE_BUTTON,
                 "Cannot close the article, cannot find X link",

@@ -2,6 +2,7 @@ package tests;
 
 import lib.CoreTestCase;
 import lib.ui.ArticlePageObject;
+import lib.ui.MainPageObject;
 import lib.ui.SearchPageObject;
 import lib.ui.factories.ArticlesPageObjectFactory;
 import lib.ui.factories.SearchPageObjectFactory;
@@ -40,5 +41,32 @@ public class ArticleTests extends CoreTestCase
         ArticlePageObject ArticlePageObject = ArticlesPageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
         ArticlePageObject.swipeToFooter();
+    }
+
+    @Test
+    public void testSwipeArticleByPixels()
+    {
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
+
+        SearchPageObject.initSearchInput();
+        SearchPageObject.typeSearchLine("Java");
+        SearchPageObject.clickByArticleWithSubstring("bject-oriented programming language");
+
+        ArticlePageObject ArticlePageObject = ArticlesPageObjectFactory.get(driver);
+        ArticlePageObject.waitForTitleElement();
+
+        System.out.println(driver.getPageSource());
+
+//        ArticlePageObject.checkThatElementIsPresent();
+
+        ArticlePageObject.scrollWebPageDownByPixels(5000);
+
+        System.out.println("===========================================================");
+        System.out.println(driver.getPageSource());
+
+        ArticlePageObject.checkThatElementIsPresent();
+
+//        ArticlePageObject.findJavaVirtualMachines();
+
     }
 }

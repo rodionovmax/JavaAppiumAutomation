@@ -35,6 +35,15 @@ public class MainPageObject {
         );
     }
 
+    public WebElement waitForElementPresentBy(By locator, String error_message, long timeoutInSeconds) {
+//        By by = this.getLocatorByString(locator);
+        WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
+        wait.withMessage(error_message + "\n");
+        return wait.until(
+                ExpectedConditions.presenceOfElementLocated(locator)
+        );
+    }
+
     public WebElement waitForElementPresent(String locator, String error_message) {
         return waitForElementPresent(locator, error_message, 5);
     }
@@ -97,7 +106,7 @@ public class MainPageObject {
                     .release()
                     .perform();
         } else {
-            System.out.println("Method swipeUp() does nothing for platform " + Platform.getInstance().getPlatformVar());
+            System.out.println("Method swipeDown() does nothing for platform " + Platform.getInstance().getPlatformVar());
         }
 
     }
@@ -126,6 +135,8 @@ public class MainPageObject {
             }
         }
     }
+
+
 
     public void swipeUpToFindElement(String locator, String error_message, int max_swipes) {
         By by = this.getLocatorByString(locator);
@@ -182,7 +193,7 @@ public class MainPageObject {
             TouchAction action = new TouchAction((AppiumDriver) driver);
             action.tap(point_to_click_x, point_to_click_y).perform();
         } else {
-            System.out.println("Method swipeUp() does nothing for platform " + Platform.getInstance().getPlatformVar());
+            System.out.println("Method clickElementToTheRightUpperCorner() does nothing for platform " + Platform.getInstance().getPlatformVar());
         }
 
     }
@@ -213,7 +224,7 @@ public class MainPageObject {
             action.release();
             action.perform();
         } else {
-            System.out.println("Method swipeUp() does nothing for platform " + Platform.getInstance().getPlatformVar());
+            System.out.println("Method elementSwipeToTheLeft() does nothing for platform " + Platform.getInstance().getPlatformVar());
         }
 
 
