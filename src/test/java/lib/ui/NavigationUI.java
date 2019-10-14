@@ -17,11 +17,11 @@ abstract public class NavigationUI extends MainPageObject{
 
     public void clickMyList() {
         if (Platform.getInstance().isMW()) {
-            this.tryClickElementWithFewAttempts(
-                    MY_LISTS_LINK,
-                    "Cannot find navigation button to My list",
-                    5
-            );
+//            this.tryClickElementWithFewAttempts(
+//                    MY_LISTS_LINK,
+//                    "Cannot find navigation button to My list",
+//                    5
+//            );
         } else {
             this.waitForElementAndClick(
                     MY_LISTS_LINK,
