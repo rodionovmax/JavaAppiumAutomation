@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bac7585-1a86-4cf4-80be-41072eb3b133" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/NavigationUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/android/AndroidSearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/android/AndroidSearchPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/factories/SearchPageObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/factories/SearchPageObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlesPageObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlesPageObjectFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,24 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/NavigationUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/lib/Platform.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MWSearchPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="127" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="127" />
+              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,49 +49,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/android/AndroidSearchPageObject.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MWArticlePageObject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="11" column="144" selection-start-line="11" selection-start-column="144" selection-end-line="11" selection-end-column="144" />
+              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/factories/SearchPageObjectFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlesPageObjectFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/ios/iOSSearchPageObject.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/ArticleTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="375">
+              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/SearchTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="15">
+              <caret line="157" column="19" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
+              <folding>
+                <element signature="e#3857#3858#0" expanded="true" />
+                <element signature="e#3885#3886#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lib/CoreTestCase.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/ios/iOSArticlePageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/SearchTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -129,18 +145,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/ChangeAppConditionTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/MyListsTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/suites/TestSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/ios/iOSSearchPageObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlesPageObjectFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/android/AndroidArticlePageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/ios/iOSArticlePageObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/factories/MyListsPageObjectFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/android/AndroidMyListsPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/ios/iOSMyListsPageObject.java" />
@@ -156,6 +168,11 @@
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/android/AndroidSearchPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/lib/ui/NavigationUI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlesPageObjectFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MWArticlePageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/ArticleTests.java" />
       </list>
     </option>
   </component>
@@ -273,6 +290,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAppiumAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAppiumAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,7 +342,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTests.testCancelSearch">
+  <component name="RunManager" selected="JUnit.ArticleTests.testSwipeArticle">
+    <configuration name="ArticleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="mobile_web" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArticleTests.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <extension name="coverage">
@@ -330,7 +377,7 @@
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <envs>
-        <env name="PLATFORM" value="android" />
+        <env name="PLATFORM" value="mobile_web" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -350,7 +397,7 @@
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <envs>
-        <env name="PLATFORM" value="android" />
+        <env name="PLATFORM" value="mobile_web" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -401,13 +448,15 @@
       <item itemvalue="JUnit.ArticleTests.testSwipeArticle" />
       <item itemvalue="JUnit.SearchTests.testSearch" />
       <item itemvalue="JUnit.SearchTests.testCancelSearch" />
+      <item itemvalue="JUnit.ArticleTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchTests.testCancelSearch" />
-        <item itemvalue="JUnit.SearchTests.testSearch" />
         <item itemvalue="JUnit.ArticleTests.testSwipeArticle" />
         <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
+        <item itemvalue="JUnit.ArticleTests" />
+        <item itemvalue="JUnit.SearchTests.testCancelSearch" />
+        <item itemvalue="JUnit.SearchTests.testSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -425,36 +474,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArticleTests_testCompareArticleTitle - 2019.10.13 at 20h 14m 37s.xml">
-      <configuration name="ArticleTests.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testCompareArticleTitle - 2019.10.13 at 20h 15m 25s.xml">
-      <configuration name="ArticleTests.testCompareArticleTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2019.10.13 at 20h 17m 38s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2019.10.13 at 20h 18m 36s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SearchTests_testSearch - 2019.10.13 at 23h 17m 08s.xml">
-      <configuration name="SearchTests.testSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SearchTests_testSearch - 2019.10.13 at 23h 19m 30s.xml">
-      <configuration name="SearchTests.testSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SearchTests_testSearch - 2019.10.13 at 23h 22m 09s.xml">
-      <configuration name="SearchTests.testSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SearchTests_testSearch - 2019.10.13 at 23h 22m 43s.xml">
-      <configuration name="SearchTests.testSearch" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SearchTests_testSearch - 2019.10.13 at 23h 27m 01s.xml">
       <configuration name="SearchTests.testSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTests_testCancelSearch - 2019.10.13 at 23h 29m 17s.xml">
+      <configuration name="SearchTests.testCancelSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTests_testCancelSearch - 2019.10.13 at 23h 30m 13s.xml">
+      <configuration name="SearchTests.testCancelSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleTests_testCompareArticleTitle - 2019.10.14 at 08h 45m 13s.xml">
+      <configuration name="ArticleTests.testCompareArticleTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleTests_testCompareArticleTitle - 2019.10.14 at 08h 46m 19s.xml">
+      <configuration name="ArticleTests.testCompareArticleTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleTests_testSwipeArticle - 2019.10.14 at 08h 46m 33s.xml">
+      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleTests_testSwipeArticle - 2019.10.14 at 08h 46m 59s.xml">
+      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleTests - 2019.10.14 at 08h 54m 21s.xml">
+      <configuration name="ArticleTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleTests_testCompareArticleTitle - 2019.10.14 at 08h 54m 47s.xml">
+      <configuration name="ArticleTests.testCompareArticleTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArticleTests_testSwipeArticle - 2019.10.14 at 08h 55m 03s.xml">
+      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -515,34 +568,12 @@
     <entry file="file://$PROJECT_DIR$/apks/Wikipedia.app/PkgInfo">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ArticleTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/suites/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="223" column="34" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
-          <folding>
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#3885#3886#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,31 +586,6 @@
             <element signature="e#871#872#0" expanded="true" />
             <element signature="e#900#901#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlesPageObjectFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/ios/iOSArticlePageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -669,16 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MWSearchPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="127" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="127" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/android/AndroidSearchPageObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -697,13 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -738,6 +727,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/ios/iOSArticlePageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/factories/ArticlesPageObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/SearchPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MWSearchPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/mobile_web/MWArticlePageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ArticleTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/ArticlePageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lib/ui/MainPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="157" column="19" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
+          <folding>
+            <element signature="e#3857#3858#0" expanded="true" />
+            <element signature="e#3885#3886#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
