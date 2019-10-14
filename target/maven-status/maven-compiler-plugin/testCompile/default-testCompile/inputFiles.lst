@@ -2,11 +2,11 @@
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/factories/MyListsPageObjectFactory.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/factories/NavigationUIFactory.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/tests/ChangeAppConditionTests.java
+/Users/max/sandbox/JavaAppiumAutomation/src/test/java/tests/iOS/GetStartedTest.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/NavigationUI.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/ios/iOSMyListsPageObject.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/factories/ArticlesPageObjectFactory.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/SearchPageObject.java
-/Users/max/sandbox/JavaAppiumAutomation/src/test/java/tests/iOS/getStartedTest.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/Platform.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/ios/iOSSearchPageObject.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/CoreTestCase.java
@@ -19,6 +19,7 @@
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/MainPageObject.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/tests/MyListsTest.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/android/AndroidNavigationUI.java
+/Users/max/sandbox/JavaAppiumAutomation/src/test/java/suites/TestSuite.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/WelcomePageObject.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/factories/SearchPageObjectFactory.java
 /Users/max/sandbox/JavaAppiumAutomation/src/test/java/lib/ui/ios/iOSArticlePageObject.java
